@@ -22,10 +22,10 @@ const Navbar = () => {
   return (
     <div>
       {/* Navbar */}
-      <nav className="flex justify-between items-center px-8 py-4 bg-[#1b0827] text-white">
+      <nav className="flex justify-between items-center px-8 py-4 bg-white text-[##1b0827]">
         {/* Logo */}
         <div className="flex items-center space-x-4">
-          <img src={logoImg} alt="Bedrock Assets Logo" className="h-10" />
+          <img src="/logo.png" alt="Bedrock Assets Logo" className="h-10" />
         </div>
 
         {/* Desktop Links */}
@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleSidebar}
-            className="text-white focus:outline-none"
+            className="font-bold focus:outline-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

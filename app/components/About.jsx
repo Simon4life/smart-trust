@@ -8,7 +8,7 @@ const About = () => {
             <div className="flex flex-col md:flex-row gap-8 items-center md:justify-between">
                 <div className="relative mt-8 md:mt-0 md:ml-12">
                     <img
-                        src="/fp5.jpg"
+                        src="/work1.jpeg"
                         alt="Business Team"
                         className="rounded-xl shadow-lg"
                     />
