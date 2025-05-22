@@ -6,23 +6,23 @@ export default function CompanyCarousel() {
         {
             id: 1,
             image: "/work4.jpg",
-            title: "Fractional Expertise",
+            title: "ICT & Enterprise Solutions",
             description:
-                "Gain access to our Fortune 50 level leadership experience without the cost of a full-time executive.",
+                "We provide desktops, laptops, servers, software and enterprise IT tools-engineered for productivity and performance.",
         },
         {
             id: 2,
             image: "/work2.jpg",
-            title: "Tailored Solutions",
+            title: "Medical & Research Equipment",
             description:
-                "Customized operational strategies to meet your unique needs and deliver scalable results.",
+                "Supplying cutting-edge diagnostic, surgical and laboratory tools to support healthcare and scientific advancement.",
         },
         {
             id: 3,
             image: "/work1.jpeg",
-            title: "Results-Oriented Approach",
+            title: "Personal and Protective Equipment (PPE)",
             description:
-                "Achieving operational excellence and sustainable growth with quantifiable improvements.",
+                "From masks and gloves to full protective gears-ensuring workplace safety in all environments",
         },
     ];
 
@@ -37,7 +37,7 @@ export default function CompanyCarousel() {
     };
 
     return (
-        <div className="relative w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-12">
+        <div id="services" className="relative w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-12">
             <h1 className="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-6">
                 Our Services
             </h1>

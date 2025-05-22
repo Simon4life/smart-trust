@@ -30,11 +30,10 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6">
-          <li><a href="#" className="hover:text-gray-200">Home</a></li>
-          <li><a href="#" className="hover:text-gray-200">Services</a></li>
-          <li><a href="#" className="hover:text-gray-200">About</a></li>
-          <li><a href="#" className="hover:text-gray-200">Resources</a></li>
-          <li><a href="#" className="hover:text-gray-200">Contact</a></li>
+          <li><a href="#" className="font-bold hover:text-gray-200">Home</a></li>
+          <li><a href="#services" className="font-bold hover:text-gray-200">Services</a></li>
+          <li><a href="#about" className="font-bold hover:text-gray-200">About</a></li>
+          <li><a href="#contact" className="font-bold hover:text-gray-200">Contact</a></li>
         </ul>
 
         {/* Get Started Button (Visible on all screens) */}
@@ -48,7 +47,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <button
             onClick={toggleSidebar}
-            className="font-bold focus:outline-none"
+            className="font-bold cursor-pointer focus:outline-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -96,11 +95,10 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="mt-6 space-y-4 px-4">
-          <li><a href="#" className="block hover:text-gray-200">Home</a></li>
-          <li><a href="#" className="block hover:text-gray-200">Services</a></li>
-          <li><a href="#" className="block hover:text-gray-200">About</a></li>
-          <li><a href="#" className="block hover:text-gray-200">Resources</a></li>
-          <li><a href="#" className="block hover:text-gray-200">Contact</a></li>
+          <li><a href="/" className="block hover:text-gray-200">Home</a></li>
+          <li><a href="#services" className="block hover:text-gray-200">Services</a></li>
+          <li><a href="#about" className="block hover:text-gray-200">About</a></li>
+          <li><a href="#contact" className="block hover:text-gray-200">Contact</a></li>
         </ul>
       </div>
 
@@ -108,7 +106,7 @@ const Navbar = () => {
       {isOpen && (
         <div
           onClick={toggleSidebar}
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="fixed inset-0 bg-opacity-50 z-40"
         />
       )}
     </div>

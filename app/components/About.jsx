@@ -3,7 +3,7 @@ import Button from './Button';
 
 const About = () => {
     return (
-        <section className='p-8 '>
+        <section id='about' className='p-8 '>
             <h1 className='text-center m-12 font-bold text-2xl'>ABOUT US</h1>
             <div className="flex flex-col md:flex-row gap-8 items-center md:justify-between">
                 <div className="relative mt-8 md:mt-0 md:ml-12">
