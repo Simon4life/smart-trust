@@ -1,4 +1,4 @@
-import CountUp from "react-countup";
+
 const Stats = () => {
     const statsData = [
         { value: 100, label: "Successfull Projects Delivered", background: "bg-purple-500" },
