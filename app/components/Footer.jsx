@@ -3,8 +3,8 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer id='contact' className="bg-[#1A032B] text-white py-10 px-6">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <footer id='contact' className="bg-[#1A032B] text-white py-10 px-12">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up">
                 {/* Left Section */}
                 <div>
                     <div className="flex items-center space-x-2 mb-4">

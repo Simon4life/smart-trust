@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
 
     return (
         <section className="bg-gray-100 py-16">
-            <div className="max-w-7xl mx-auto px-6 text-center">
+            <div className="max-w-7xl mx-auto px-12 text-center" data-aos="fade-up">
                 <h2 className="text-3xl font-bold text-purple-700 mb-4">
                     Why Choose Smart Trust Limited
                 </h2>

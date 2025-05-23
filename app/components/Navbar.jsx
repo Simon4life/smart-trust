@@ -2,9 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { CgClose, CgMenuCheese } from 'react-icons/cg'
-import Button from './Button'
-import logoImg from "../../public/logo.png"
+
 const Navbar = () => {
 
   const [isActive, setIsActive] = useState(false);
@@ -30,10 +28,10 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-6">
-          <li><a href="#" className="font-bold hover:text-gray-200">Home</a></li>
-          <li><a href="#services" className="font-bold hover:text-gray-200">Services</a></li>
-          <li><a href="#about" className="font-bold hover:text-gray-200">About</a></li>
-          <li><a href="#contact" className="font-bold hover:text-gray-200">Contact</a></li>
+          <li><a href="#" className="font-bold hover:text-[#1b0827]">Home</a></li>
+          <li><a href="#services" className="font-bold hover:text-[#1b0827]">Services</a></li>
+          <li><a href="#about" className="font-bold hover:text-[#1b0827]">About</a></li>
+          <li><a href="#contact" className="font-bold hover:text-[#1b0827]">Contact</a></li>
         </ul>
 
         {/* Get Started Button (Visible on all screens) */}
@@ -69,14 +67,14 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full bg-purple-700 text-white w-64 transform ${isOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 h-full bg-[#1b0827] text-white w-64 transform ${isOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out z-50`}
       >
-        <div className="flex justify-between items-center px-4 py-4 border-b border-purple-500">
+        <div className="flex justify-between items-center px-4 py-5 border-b border-purple-500">
           <h2 className="text-xl font-bold">Menu</h2>
           <button
             onClick={toggleSidebar}
-            className="text-white focus:outline-none"
+            className="text-white cursor-pointer focus:outline-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,10 +93,10 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="mt-6 space-y-4 px-4">
-          <li><a href="/" className="block hover:text-gray-200">Home</a></li>
-          <li><a href="#services" className="block hover:text-gray-200">Services</a></li>
-          <li><a href="#about" className="block hover:text-gray-200">About</a></li>
-          <li><a href="#contact" className="block hover:text-gray-200">Contact</a></li>
+          <li><Link onClick={toggleSidebar} href="/" className="block hover:text-gray-200">Home</Link></li>
+          <li><Link onClick={toggleSidebar} href="#contact" className="block hover:text-gray-200">Contact</Link></li>
+          <li><Link onClick={toggleSidebar} href="#about" className="block hover:text-gray-200">About</Link></li>
+          <li><Link onClick={toggleSidebar} href="#services" className="block hover:text-gray-200">Services</Link></li>
         </ul>
       </div>
 
