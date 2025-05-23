@@ -1,9 +1,8 @@
 import React from 'react'
-import Button from './Button';
 
 const About = () => {
     return (
-        <section id='about' className='p-12 '>
+        <section id='about' className='p-8 md:p-12'>
             <h1 className='text-center mb-6 font-bold text-4xl'>ABOUT US</h1>
             <div className="flex flex-col md:flex-row gap-8 items-center md:justify-between" data-aos="fade-up">
                 <div className="relative mt-8 md:mt-0 ">

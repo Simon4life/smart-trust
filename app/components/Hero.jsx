@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const Hero = () => {
     return (
-        <div className="relative flex flex-col md:flex-row justify-center items-center h-100vh bg-[#1b0827] text-white px-12 md:px-12 py-12 space-y-8 md:space-y-0">
+        <div className="relative flex flex-col md:flex-row justify-center items-center h-100vh bg-[#1b0827] text-white px-8 md:px-12 py-12 space-y-8 md:space-y-0">
             <div className="flex flex-col mb-0 items-start  space-y-6" data-aos="fade-up">
                 <h1 className="text-4xl mb-2 sm:text-4xl md:text-5xl font-bold leading-tight">
                     Shaping the Future one Byte at a Time

@@ -1,10 +1,10 @@
 
 import React from 'react'
-
+import LocationMap from "./LocationMap"
 const Footer = () => {
     return (
-        <footer id='contact' className="bg-[#1A032B] text-white py-10 px-12">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up">
+        <footer id='contact' className="bg-[#1A032B] text-white py-10 px-8 md:px-12">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 items-center md:grid-cols-3 gap-4" data-aos="fade-up">
                 {/* Left Section */}
                 <div>
                     <div className="flex items-center space-x-2 mb-4">
@@ -52,6 +52,9 @@ const Footer = () => {
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div>
+                    <LocationMap />
                 </div>
             </div>
         </footer>

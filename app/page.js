@@ -9,6 +9,8 @@ import CompanyCarousel from "./components/CarouselServices";
 import FeatureCards from "./components/Choose-us-section";
 import About from "./components/About"
 import Footer from "./components/Footer";
+import FAQ from "./components/Faq"
+
 export default function Home() {
 
   useEffect(() => {
@@ -23,6 +25,7 @@ export default function Home() {
       <CompanyCarousel />
       <FeatureCards />
       <About />
+      <FAQ />
       <Footer />
     </>
 
