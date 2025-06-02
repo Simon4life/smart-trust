@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
 import React from 'react';
-import Button from "./Button"
 import Image from 'next/image';
 
 // components/HeroCarousel.js
@@ -49,12 +48,12 @@ export default function HeroCarousel() {
                   {slide.title}
                 </h1>
                 <p className="text-lg md:text-xl mb-6" data-aos="fade-up">{slide.text}</p>
-                <a
+                <Link
                   href="#contact"
                   className="bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded text-white transition" data-aos="fade-up"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </SwiperSlide>

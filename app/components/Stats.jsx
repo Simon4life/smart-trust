@@ -8,7 +8,7 @@ const Stats = () => {
     ];
 
     return (
-        <section className="px:8 md:px-12">
+        <section className="py-16 max-w-7xl mx-auto px-6">
             <h1 className="text-center text-3xl md:text-4xl font-bold m-6">Our Impact at a Glance</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-8 bg-white" data-aos="fade-up">
                 {statsData.map((stat, index) => (
