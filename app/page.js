@@ -10,7 +10,7 @@ import FeatureCards from "./components/Choose-us-section";
 import About from "./components/About"
 import Footer from "./components/Footer";
 import FAQ from "./components/Faq"
-
+import MissionVission from "./components/Mission"
 export default function Home() {
 
   useEffect(() => {
@@ -22,10 +22,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Stats />
+      <About />
+      <MissionVission/>
       <CompanyCarousel />
       <FeatureCards />
-      <About />
-      <FAQ />
+      
       <Footer />
     </>
 

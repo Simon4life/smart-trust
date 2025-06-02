@@ -8,21 +8,42 @@ export default function CompanyCarousel() {
             image: "/work4.jpg",
             title: "ICT & Enterprise Solutions",
             description:
-                "We provide desktops, laptops, servers, software and enterprise IT tools-engineered for productivity and performance.",
+                "We provide a wide range of enterprise-ready IT products including desktops, laptops, servers, networking devices, printers, and licensed software. Our solutions are designed for reliability, security, and productivity.",
         },
         {
             id: 2,
             image: "/work2.jpg",
             title: "Medical & Research Equipment",
             description:
-                "Supplying cutting-edge diagnostic, surgical and laboratory tools to support healthcare and scientific advancement.",
+                "From diagnostic tools and surgical instruments to advanced lab and biotechnology systems, we supply top-tier medical and research equipment for hospitals, labs, and academic institutions..",
         },
         {
             id: 3,
             image: "/work1.jpeg",
             title: "Personal and Protective Equipment (PPE)",
             description:
-                "From masks and gloves to full protective gears-ensuring workplace safety in all environments",
+                "We offer a comprehensive selection of certified PPE including masks, gloves, gowns, face shields, and footwear—ensuring health and safety in medical, industrial, and public settings.",
+        },
+        {
+            id: 4,
+            image: "/work1.jpeg",
+            title: "Office and Facility Supplies",
+            description:
+                "We supply ergonomic office furniture, AV tools, storage systems, and essential office consumables—designed to enhance efficiency and comfort in your work environment.",
+        },
+        {
+            id: 5,
+            image: "/work1.jpeg",
+            title: "Project and Facility Management",
+            description:
+                "As authorized distributors for 50+ global brands (including HP, Cisco, Huawei, Dell, Microsoft), we ensure access to high-quality, original products with seamless logistics and warranty support.",
+        },
+        {
+            id: 6,
+            image: "/work1.jpeg",
+            title: "Technical Support, Repairs & Maintenance",
+            description:
+                "We provide ongoing support through training, system integration, and preventive maintenance—keeping your infrastructure running smoothly with minimal downtime.",
         },
     ];
 
@@ -38,7 +59,7 @@ export default function CompanyCarousel() {
 
     return (
         <div id="services" className="relative w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-12">
-            <h1 className="text-center text-2xl md:text-3xl font-bold text-gray-800 mb-6">
+            <h1 className="text-center mb-10 font-bold text-4xl">
                 Our Services
             </h1>
             <div className="overflow-hidden">

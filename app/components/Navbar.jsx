@@ -7,12 +7,6 @@ const Navbar = () => {
 
   const [isActive, setIsActive] = useState(false);
 
-  const handleClick = () => {
-    setIsActive(!isActive)
-  }
-
-
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => setIsOpen(!isOpen);
@@ -23,7 +17,10 @@ const Navbar = () => {
       <nav className="flex justify-between items-center px-8 py-4 bg-white text-[##1b0827]">
         {/* Logo */}
         <div className="flex items-center space-x-4">
+          <Link href="/">
           <img src="/logo.png" alt="Bedrock Assets Logo" className="h-10" />
+          </Link>
+          
         </div>
 
         {/* Desktop Links */}
@@ -36,9 +33,9 @@ const Navbar = () => {
 
         {/* Get Started Button (Visible on all screens) */}
         <div className="hidden md:block">
-          <button className="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-800">
+          <Link href="#services" className="bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-800">
             Get Started
-          </button>
+          </Link>
         </div>
 
         {/* Hamburger Menu */}

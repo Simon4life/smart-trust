@@ -1,64 +1,77 @@
+import React from 'react';
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { MdEmail, MdLocationPin, MdPhone } from "react-icons/md";
+import LocationMap from './LocationMap';
 
-import React from 'react'
-import LocationMap from "./LocationMap"
 const Footer = () => {
-    return (
-        <footer id='contact' className="bg-[#1A032B] text-white py-10 px-8 md:px-12">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 items-center md:grid-cols-3 gap-4" data-aos="fade-up">
-                {/* Left Section */}
-                <div>
-                    <div className="flex items-center space-x-2 mb-4">
-                        <div className="text-2xl font-bold">Smart Trust</div>
-                        <span className="text-sm uppercase tracking-wide">Assets</span>
-                    </div>
-                    <p className="text-sm mb-6">
-                        Suite 201, Kings Plaza, Plot 307, Ahmadu Bello Way, FCT-Abuja.
-                    </p>
-                    <p className="text-sm mb-2">
-                        <strong>P:</strong> +234 706 315 9536,
-                    </p>
-                    <p className="text-sm">
-                        <strong>E:</strong> smart-trustlimited@outlook.com | info@smartturstlimited.com
-                    </p>
-                </div>
+  return (
+    <footer id="contact" className="bg-[#1A032B] text-white pt-16 pb-10 px-6 md:px-12">
+      <div
+        className="max-w-7xl mx-auto flex flex-col md:flex-row flex-wrap justify-between items-center gap-10"
+        data-aos="fade-up"
+      >
+        {/* Company Info & About */}
+        <div className="flex-1 min-w-[250px]">
+          <h2 className="text-2xl font-bold mb-2">Smart Trust</h2>
+          <p className="text-justify leading-relaxed mb-4">
+            Smart Trust Limited is a trusted provider of enterprise IT, medical, and safety
+            solutions in Nigeria. We specialize in the procurement, distribution, and support of
+            high-quality products and services for government agencies, NGOs, and private
+            organizations.
+          </p>
+         
+        </div>
 
-                {/* Right Section */}
-                <div>
-                    <h3 className="text-lg font-semibold mb-4">Quicklinks</h3>
-                    <ul className="space-y-2">
-                        <li>
-                            <a href="#" className="text-sm hover:text-purple-400">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="text-sm hover:text-purple-400">
-                                Services
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="text-sm hover:text-purple-400">
-                                About
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="text-sm hover:text-purple-400">
-                                Resources
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="text-sm hover:text-purple-400">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <LocationMap />
-                </div>
-            </div>
-        </footer>
-    );
-}
+        {/* Quick Links */}
+        {/* <div className="flex-1 min-w-[100px]">
+          <h2 className="text-2xl font-bold mb-2">Quick Links</h2>
+          <ul className="space-y-2 text-sm">
+            <li><a href="#" className="hover:text-purple-400">Home</a></li>
+            <li><a href="#" className="hover:text-purple-400">Services</a></li>
+            <li><a href="#" className="hover:text-purple-400">About Us</a></li>
+            <li><a href="#" className="hover:text-purple-400">Projects</a></li>
+            <li><a href="#" className="hover:text-purple-400">Contact</a></li>
+          </ul>
+        </div> */}
 
-export default Footer
+        {/* Social Links */}
+        <div className="flex-1 min-w-[400px]">
+        <h2 className="text-2xl font-bold mb-2">Contact Us</h2>
+        <p className="flex items-center my-1">
+            <strong className='mr-2 text-xl'><MdLocationPin/></strong> Suite 201, Kings Plaza, Plot 307, Ahmadu Bello Way, FCT-Abuja
+          </p>
+          <p className="flex items-center my-1"><strong className='mr-2 text-xl'><MdPhone/></strong> +234 706 315 9536</p>
+          <p className="flex items-center my-1">
+            <strong className='inline-block mr-2 text-xl'><MdEmail/></strong> smart-trustlimited@outlook.com | info@smarttrustlimited.com
+          </p>
+          <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+          <div className="flex space-x-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF className="text-xl hover:text-purple-400 transition" />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="text-xl hover:text-purple-400 transition" />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn className="text-xl hover:text-purple-400 transition" />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-xl hover:text-purple-400 transition" />
+            </a>
+          </div>
+        </div>
+
+        {/* Embedded Map */}
+        <div className="flex-1 min-w-[250px] w-full">
+          <LocationMap />
+        </div>
+      </div>
+
+      <div className="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+        © {new Date().getFullYear()} Smart Trust Limited. All rights reserved.
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
