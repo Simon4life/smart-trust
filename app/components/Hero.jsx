@@ -40,20 +40,23 @@ export default function HeroCarousel() {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="relative w-full h-full bg-cover bg-center flex items-center justify-center"
+              className="relative w-full h-[90vh] bg-cover bg-center flex items-center justify-center"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="bg-black/60 absolute flex flex-col justify-items-center items-center bg-opacity-50 text-white p-8 w-full h-full text-center">
-              <h1 className="text-3xl text-center mt-36 md:text-5xl font-bold mb-4" data-aos="fade-up">
-                  {slide.title}
-                </h1>
-                <p className="text-lg md:text-xl mb-6" data-aos="fade-up">{slide.text}</p>
-                <Link
-                  href="#contact"
-                  className="bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded text-white transition" data-aos="fade-up"
-                >
-                  Contact Us
-                </Link>
+              <div className="bg-black/60 absolute bg-opacity-50 text-white p-8 w-full h-full text-center">
+              <div className="w-full h-full flex flex-col items-center justify-center">
+                <h1 className="text-3xl text-center md:text-5xl font-bold mb-4" data-aos="fade-up">
+                    {slide.title}
+                    </h1>
+                    <p className="text-lg md:text-xl mb-6" data-aos="fade-up">{slide.text}</p>
+                    <Link
+                    href="#contact"
+                    className="bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded text-white transition" data-aos="fade-up"
+                    >
+                    Contact Us
+                    </Link>
+              </div>
+              
               </div>
             </div>
           </SwiperSlide>
