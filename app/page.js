@@ -9,7 +9,6 @@ import CompanyCarousel from "./components/CarouselServices";
 import FeatureCards from "./components/Choose-us-section";
 import About from "./components/About"
 import Footer from "./components/Footer";
-import FAQ from "./components/Faq"
 import MissionVission from "./components/Mission"
 export default function Home() {
 
@@ -26,7 +25,6 @@ export default function Home() {
       <MissionVission/>
       <CompanyCarousel />
       <FeatureCards />
-      
       <Footer />
     </>
 
